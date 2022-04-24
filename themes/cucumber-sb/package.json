@@ -21,6 +21,12 @@
     "build-clean": "rimraf static/css/cucumber.css*",
     "build-sass": "node-sass --output-style expanded static/css/cucumber.sass static/css/cucumber.css",
     "build-autoprefix": "postcss --use autoprefixer --output static/css/cucumber.css static/css/cucumber.css",
-    "watch": "concurrently --kill-others \"yarn build-sass --watch\" \"yarn build-autoprefix --watch\""
+    "watch": "concurrently --kill-others \"yarn build-sass --watch\" \"yarn build-autoprefix --watch\"",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
