@@ -8,7 +8,7 @@
     "bulma": "^0.7.1",
     "concurrently": "^3.5.1",
     "node-sass": "^4.9.0",
-    "postcss-cli": "^5.0.0",
+    "postcss-cli": "^11.0.1",
     "rimraf": "^2.6.2",
     "yarn": "^1.19.1"
   },
